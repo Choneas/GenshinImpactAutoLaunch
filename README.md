@@ -1,5 +1,5 @@
 # Genshin Impacct Auto Launch
-![Alt text](.\RunningFiles\genshin_launch_meme.png)
+![Alt text](./RunningFiles/genshin_launch_meme.png)
 
 ## 声明
 
