@@ -1,12 +1,12 @@
 # Genshin Impacct Auto Launch
-![Alt text](RunningFiles\genshin_launch_meme.png)
+![Alt text](.\RunningFiles\genshin_launch_meme.png)
 
 ## 声明
 
 forked from
 [YinBuLiao/GenshinImpact_Start](https://github.com/YinBuLiao/GenshinImpact_Start) 十分感谢 我只是添加了可配置性
 
-从 [config.ini](config.ini) 文件进行设置 满足大多数原神,启动！要求
+从 [config.ini](.\config.ini) 文件进行设置 满足大多数原神,启动！要求
 
 进行 一点点♂改♂造 ~
 
