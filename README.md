@@ -38,21 +38,21 @@ launchmusicstyle = 3 # 选择音乐类型 1 为 Shed A Light(启动の小曲) 2 
 ## (次要)如何下载ffmpeg且添加到环境变量中?
 首先 从 -->**[FFmpeg-Builds仓库](https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest)**<-- 中下载 ffmpeg-master-latest-win64-lgpl.zip 文件**然后解压到合适的位置**
 
-![解压ffmpeg.zip](.\FFmpegInstallHelp\unzip.png)
+![解压ffmpeg.zip](./FFmpegInstallHelp/unzip.png)
 
 接着 按下 Windows 键 依次输入 p a t h 四个字母 打开环境变量配置
 
-![打开环境变量配置](.\FFmpegInstallHelp\openpathset.png)
+![打开环境变量配置](./FFmpegInstallHelp/openpathset.png)
 
 在新窗口中 点击右下角的 环境变量 按钮
 
-![打开环境变量配置窗口](.\FFmpegInstallHelp\systeminfowindow.png)
+![打开环境变量配置窗口](./FFmpegInstallHelp/systeminfowindow.png)
 
 请按照图片操作 如果需要放大 尝试 Ctrl + 鼠标滚轮 或者在项目 FFMpegInstallHelp 文件夹中打开image.png
 
-![设置环境变量](.\FFmpegInstallHelp\image.png)
+![设置环境变量](./FFmpegInstallHelp/image.png)
 
-测试: 按下 Win 建 + R 输入 `cmd` 点击确定
+测试: 按下 Win 键 + R 输入 `cmd` 点击确定
 
 在弹出的窗口中 输入以下命令
 
