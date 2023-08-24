@@ -1,0 +1,9 @@
+opencv-python
+pyautogui
+numpy
+subprocess
+pywin32
+configparser
+pydub
+threading
+pyaudio
