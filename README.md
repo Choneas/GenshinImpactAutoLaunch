@@ -14,6 +14,20 @@ forked from
 <font color="red">**程序最开始打开是需要一段时间的 请耐心等待。</br>如果需要播放振奋人心的启动音乐，您需要自己安装ffmpeg且确保在环境变量内，才能正确播放音频，否则可能无法播放音频。(我不会写自动添加环境变量的代码)** </br>最好先单独运行musicplayer.exe一次 否则启动时musicplayer.exe会自解压自己的运行文件 造成播放大延迟 记得根据你的原神启动速度调整 musicDelay 值</font></br>
 贴心FFmpeg安装的我已经写好教程啦 翻到底部即可查看
 
+## 构建方式 (此内容不包含在下载后的程序包中)
+1. 在程序根目录以管理员身份打开 `cmd.exe` 或 `Power shell` 输入以下命令:
+   `python install_requirements.py`
+   如果它正确安装了所有的包 且没有报错可继续执行下一步
+   如果没有 请手动继续输入
+   `cd .\RunningFiles\`
+   然后在文件资源管理器中打开 `pip-packages.txt` 依次输入
+   `pip install` + 文本文档中的每一行
+2. 编辑完代码后 在 main.py 所在目录以管理员身份打开 `cmd.exe` 或 `Power shell` 输入以下命令:
+   `pyinstaller main.py --icon=favicon.ico`
+   *打包main.py为main.exe 且main.exe图标为当前目录所在的favicon.ico图片文件*
+   如果你想让它单独为一个exe文件 可以使用以下方法:
+   `pyinstaller --onefile main.py --upx-dir="你的当前所在目录" --icon=favicon.ico`
+   *打包main.py为main.exe 但是不会生成很多文件 且使用upx压缩exe文件*
 ## 可配置文件
 
 ``` ini
