@@ -6,7 +6,7 @@
 forked from
 [YinBuLiao/GenshinImpact_Start](https://github.com/YinBuLiao/GenshinImpact_Start)
 
-Uses [config.ini](.\config.ini) to make a personalize Genshin Impact Launching style.
+Uses [config.ini](.\config.ini) to make a personalize Genshin Impact launching style.
 
 ## Features
 - **pyparaser** Read the configuration file
@@ -14,7 +14,7 @@ Uses [config.ini](.\config.ini) to make a personalize Genshin Impact Launching s
 - **threading** Multi-thread music play
 
 ## Build
-Build scripts is not in Release. You should download the ZIP of all the repo.
+Build scripts is not in Release. You should download the ZIP of the repo.
 1. `cd` to the program's folder.
 2. `pip install -r install_requirements.py`
 3. `cd` to where the `main.py` in.
@@ -25,7 +25,7 @@ Build scripts is not in Release. You should download the ZIP of all the repo.
 
 ``` ini
 [launch]
-readshortcut = false # Use the shortcut icon in desktop to detect Genshin Impact's path
+readshortcut = false # Use the shortcut icon in desktop to detect Genshin Impact's path?
 gamelocation = YuanShen.exe # If `readshortcut` is `false`, type your Genshin Impact executeable file's path here.
 [check]
 scaningscreendelay = 3 # Second(s). Scaning screen delay(Screenshot for checking the white percentage) 
@@ -45,10 +45,19 @@ I recommended to run `musicplayer.exe` just once before launching. Remember to s
 ## TO-DO
 1. Support Genshin Impact(Not YuanShen)
 2. Change the configuration file to `.toml` or `.yml` not `.ini`
-3. Alaways running in background silently.
-4. Translate this ↓
+3. Always running in background silently.
+4. Optimize the code.
 
-## 如何下载ffmpeg且添加到环境变量中?
+## About this frok's author
+Hello, I am [Choneas](https://github.com/Choneas). I am a little human. This program made in the summer hoilday of 2023 that I din't walk into a scary place. Now I think I won't use Python for a while, I'm rushing into C++ and Javascript(Typescript TSX) now.
+
+Did there someone read this?
+
+Oh I think not.
+
+A midnight of September 19 (2:13 AM)
+
+<!-- ## 如何下载ffmpeg且添加到环境变量中?
 首先 从[BtbN/FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest)**中下载 ffmpeg-master-latest-win64-lgpl.zip 文件**然后解压到合适的位置**
 
 ![解压ffmpeg.zip](./FFmpegInstallHelp/unzip.png)
@@ -71,4 +80,4 @@ I recommended to run `musicplayer.exe` just once before launching. Remember to s
 
 `ffmpeg`
 
-如果有一大串英文 说明安装成功
+如果有一大串英文 说明安装成功 -->
