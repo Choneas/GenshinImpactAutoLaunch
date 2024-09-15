@@ -49,7 +49,7 @@ I recommended to run `musicplayer.exe` just once before launching. Remember to s
 4. Optimize the code.
 
 ## About this frok's author
-Hello, I am [Choneas](https://github.com/Choneas). I am a little human. This program made in the summer hoilday of 2023 that I din't walk into a scary place. Now I think I won't use Python for a while, I'm rushing into C++ and Javascript(Typescript TSX) now.
+Hello, I am [Choneas](https://github.com/Choneas). I am a little human. This program made in the summer hoilday of 2023 that before I walk into a scary place. Now I think I won't use Python for a while, I'm rushing into C++ and Javascript(Typescript TSX) now.
 
 Did there someone read this?
 
