@@ -1,6 +1,10 @@
 # Genshin Impact Auto Launch
 ![Alt text](./RunningFiles/genshin_launch_meme.png)
 
+Launch your Genshin Impact automatically when the scrren is while.
+
+自动在您的屏幕偏白的时候启动原神。
+
 ## About
 
 forked from
