@@ -1,54 +1,54 @@
-# Genshin Impacct Auto Launch
+# Genshin Impact Auto Launch
 ![Alt text](./RunningFiles/genshin_launch_meme.png)
 
-## 声明
+## About
 
 forked from
 [YinBuLiao/GenshinImpact_Start](https://github.com/YinBuLiao/GenshinImpact_Start)
-十分感谢 我只是添加了可配置性
 
-从 [config.ini](.\config.ini) 文件进行设置 满足大多数原神,启动！要求
+Uses [config.ini](.\config.ini) to make a personalize Genshin Impact Launching style.
 
-## 警告
-<font color="red">**程序最开始打开是需要一段时间的 请耐心等待。</br>如果需要播放振奋人心的启动音乐，您需要自己安装ffmpeg且确保在环境变量内，才能正确播放音频，否则可能无法播放音频。** </br>最好先单独运行musicplayer.exe一次 否则启动时musicplayer.exe会自解压自己的运行文件 造成播放大延迟 记得根据你的原神启动速度调整 musicDelay 值</font></br>
-贴心FFmpeg安装的我已经写好教程啦 翻到底部即可查看
+## Features
+- **pyparaser** Read the configuration file
+- **pydub** Music play module
+- **threading** Multi-thread music play
 
-## 构建
-### (此内容不包含在下载后的程序包中)
-1. **在程序根目录以管理员身份打开 `cmd.exe` 或 `Power shell` 输入以下命令:
-   `pip install -r install_requirements.py`\
-   如果它正确安装了所有的包 且没有报错可继续执行下一步**\
-   如果没有 请手动继续输入\
-   `cd .\RunningFiles\`
-   然后在文件资源管理器中打开 `pip-packages.txt` 依次输入
-   `pip install` + 文本文档中的每一行
-2. 编辑完代码后 在 main.py 所在目录以管理员身份打开 `cmd.exe` 或 `Power shell` 输入以下命令:\
-   `pyinstaller main.py --icon=favicon.ico`\
-   *打包main.py为main.exe 且main.exe图标为当前目录所在的favicon.ico图片文件*\
-   如果你想让它单独为一个exe文件 可以使用以下方法:\
-   `pyinstaller --onefile main.py --upx-dir="你的当前所在目录" --icon=favicon.ico`\
-   *打包main.py为main.exe 但是不会生成很多文件 且使用upx压缩exe文件*
-## 可配置文件
+## Build
+Build scripts is not in Release. You should download the ZIP of all the repo.
+1. `cd` to the program's folder.
+2. `pip install -r install_requirements.py`
+3. `cd` to where the `main.py` in.
+4. `pyinstaller main.py --icon=favicon.ico`
+5. (If you want the program to be a single exe file)\
+   `pyinstaller --onefile main.py --upx-dir="Your path" --icon=favicon.ico`
+## Configurations
 
 ``` ini
 [launch]
-readshortcut = false # 是否从桌面读取快捷方式来启动原神
-gamelocation = YuanShen.exe # 如果不读取桌面快捷方式 请输入YuanShen.exe的绝对路径 不需要加入引号
+readshortcut = false # Use the shortcut icon in desktop to detect Genshin Impact's path
+gamelocation = YuanShen.exe # If `readshortcut` is `false`, type your Genshin Impact executeable file's path here.
 [check]
-scaningscreendelay = 3 # 间隔扫描时间 单位: 秒 这样做应该可以节约功耗
-launchwhitepercentage = 90 # 如果白色率大于等于这个值 将自动启动白色率可能大于100 先测试一下 调整到舒适值
+scaningscreendelay = 3 # Second(s). Scaning screen delay(Screenshot for checking the white percentage) 
+launchwhitepercentage = 90 # Recommended to test this before your showcase. It maybe > 100
 [music]
-playlaunchmusic = true # 是否在原神，启动！时后台播放启动音乐, 默认有两种可供选择
-musicdelay = 3 # 设置歌曲延迟(秒)，可能播放的时候没有对接上
-launchmusicstyle = 3 # 选择音乐类型 1 为 Shed A Light(启动の小曲) 2 为 门酱DDD 的 “原神，启动！！！” 3 为 两者合一 你也可以在 RunningFiles\Music\ 中添加更多mp3
+playlaunchmusic = true # Play music while launching?
+musicdelay = 3 # Set the music delay.(For slow devices)
+launchmusicstyle = 3 # Music file name in `Music` folder. Default: 1. Shed a Light(Clip) 2. 门酱DDD's 原神启动(the program cover image) 3. Both
 ```
 
-## 添加的技术内容
-- **pyparaser** 读取配置文件
-- **pydub** 播放音乐模块
-- **threading** 多线程播放
-<br/>
-### 如何下载ffmpeg且添加到环境变量中?
+## FAQ
+### Why the music doesn't play while launching?
+If you want to play music while launching, you should make sure the `ffmpeg` is in your `path`.
+### Why the music plays late?
+I recommended to run `musicplayer.exe` just once before launching. Remember to set the `musicDelay` value.
+
+## TO-DO
+1. Support Genshin Impact(Not YuanShen)
+2. Change the configuration file to `.toml` or `.yml` not `.ini`
+3. Alaways running in background silently.
+4. Translate this ↓
+
+## 如何下载ffmpeg且添加到环境变量中?
 首先 从[BtbN/FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest)**中下载 ffmpeg-master-latest-win64-lgpl.zip 文件**然后解压到合适的位置**
 
 ![解压ffmpeg.zip](./FFmpegInstallHelp/unzip.png)
